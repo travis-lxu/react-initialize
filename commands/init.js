@@ -8,7 +8,7 @@ const fs = require('fs');
 const path = require('path');
 
 const option =  program.parse(process.argv).args[0];
-const defaultName = typeof option === 'string' ? option : 'react-project';
+const defaultName = typeof option === 'string' ? option : 'my-react-app';
 const tplList = require(`${__dirname}/../templates`);
 const tplLists = Object.keys(tplList) || [];
 const question = [
@@ -73,8 +73,8 @@ module.exports = prompt(question).then(({name, template, description, author}) =
   spinner.start();
   download(`${gitPlace}${gitBranch}`, `./${projectName}`, (err) => {
     if (err) {
-      console.log(chalk.red(err))
-      process.exit()
+      console.log(chalk.red(err));
+      process.exit();
     }
     fs.readFile(`./${projectName}/package.json`, 'utf8', function (err, data) {
       if(err) {

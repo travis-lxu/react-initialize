@@ -2,6 +2,7 @@
 
 const { resolve } = require('path');
 const program = require('commander');
+const chalk = require('chalk');
 
 const res = command => resolve(__dirname, '../commands/', command)
 process.env.NODE_PATH = __dirname + '/../node_modules/';
@@ -16,11 +17,17 @@ program.command('init')
   .description('Generate a new project')
   .alias('i')
   .action(() => {
-    require(res('init'))
+    require(res('init'));
   });
 
 program.parse(process.argv);
 
 if(!program.args.length){
-  program.help()
+  console.log(`Please specify the project directory:
+  ${chalk.cyanBright('react-cli init')} ${chalk.green('<project-directory>')}
+
+For example:
+  ${chalk.cyanBright('react-cli init')} ${chalk.green('my-react-app')}
+
+Run ${chalk.cyanBright('react-cli --help')} to see all options.`)
 }
