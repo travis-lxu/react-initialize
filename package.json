@@ -1,0 +1,33 @@
+{
+  "name": "react-cli",
+  "version": "1.0.0",
+  "description": "A React-cli like the create-my-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "react-cli": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GXwar/react-cli.git"
+  },
+  "keywords": [
+    "react",
+    "cli"
+  ],
+  "author": "GXwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GXwar/react-cli/issues"
+  },
+  "homepage": "https://github.com/GXwar/react-cli#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.0",
+    "ora": "^3.0.0"
+  }
+}

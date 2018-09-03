@@ -1,0 +1,14 @@
+{
+  "init": {
+    "place": "Hzy0913/react-template",
+    "branch": ""
+  },
+  "complete-project": {
+    "place": "Hzy0913/react-template",
+    "branch": "#complete"
+  },
+  "simple-project": {
+    "place": "Hzy0913/react-template",
+    "branch": "#simple"
+  }
+}
