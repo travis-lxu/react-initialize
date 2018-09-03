@@ -1,13 +1,13 @@
 {
-  "name": "react-cli",
+  "name": "react-initialize",
   "version": "1.0.0",
-  "description": "A React-cli like the create-my-app",
+  "description": "A React-cli tool like the create-react-app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "react-cli": "bin/index.js"
+    "react-initialize": "bin/index.js"
   },
   "repository": {
     "type": "git",
